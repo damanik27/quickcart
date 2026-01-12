@@ -41,6 +41,9 @@ const Navbar = () => {
           Account
         </button>
         </ul>
+              <div className="flex items-center md:hidden gap-3">
+                </div>
+
       </nav>
     );
   }
