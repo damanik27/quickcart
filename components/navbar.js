@@ -34,8 +34,13 @@ const Navbar = () => {
           {isSeller && <button onClick={() => router.push('/seller')} className="text-xs border px-4 py-1.5 rounded-full">Seller Dashboard</button>}
           </div>
 
-           <ul className="hidden md:flex items-center gap-4 "></ul>
+           <ul className="hidden md:flex items-center gap-4 ">
             <Image className="w-4 h-4" src={assets.search_icon} alt="search icon" />
+            <button className="flex items-center gap-2 hover:text-gray-900 transition">
+          <Image src={assets.user_icon} alt="user icon" />
+          Account
+        </button>
+        </ul>
       </nav>
     );
   }
