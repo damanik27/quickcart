@@ -33,6 +33,8 @@ const Navbar = () => {
 
           {isSeller && <button onClick={() => router.push('/seller')} className="text-xs border px-4 py-1.5 rounded-full">Seller Dashboard</button>}
           </div>
+
+           <ul className="hidden md:flex items-center gap-4 "></ul>
       </nav>
     );
   }
