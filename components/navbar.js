@@ -17,6 +17,10 @@ const Navbar = () => {
           src={assets.logo}
           alt="logo"
         />
+        <div className="flex items-center gap-4 lg:gap-8 max-md:hidden">
+        <Link href="/" className="hover:text-gray-900 transition">
+        </Link>
+          </div>
       </nav>
     );
   }
