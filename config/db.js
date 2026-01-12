@@ -20,14 +20,12 @@ async function connectDB() {
     cache.promise = mongoose.connect(`${process.env.MONGODB_URI}quickcart`, opts).then((mongoose) => {
       return mongoose;
     });
+
   }
 
-  try {
-    cache.conn = await cache.promise;
-  } catch (e) {
-    cache.promise = null;
-    throw e;
-  }
-
+    cache.conn = await cache.promise
   return cache.conn;
+
 }
+
+export default connectDB;
