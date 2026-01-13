@@ -29,3 +29,5 @@ export const AppContextProvider = (props) => {
     const fetchUserData = async () => {
         setUserData(userDummyData)
     }
+
+     const addToCart = async (itemId) => {
