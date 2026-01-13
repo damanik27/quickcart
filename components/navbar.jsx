@@ -59,7 +59,7 @@ const Navbar = () => {
           <>
             <UserButton>
               <UserButton.MenuItems>
-                <UserButton.Action label="Cart" labelIcon={null} />
+                <UserButton.Action label="Cart" labelIcon={CartIcon} onClick={() => router.push("/cart")} />
               </UserButton.MenuItems>
             </UserButton>
           </>
