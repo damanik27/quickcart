@@ -52,3 +52,12 @@ export const AppContextProvider = (props) => {
         setCartItems(cartData)
 
     }
+    const getCartCount = () => {
+        let totalCount = 0;
+        for (const items in cartItems) {
+            if (cartItems[items] > 0) {
+                totalCount += cartItems[items];
+            }
+        }
+        return totalCount;
+    }
