@@ -21,6 +21,7 @@ export const AppContextProvider = (props) => {
     const [userData, setUserData] = useState(false)
     const [isSeller, setIsSeller] = useState(true)
     const [cartItems, setCartItems] = useState({})
+    
 
     const fetchProductData = async () => {
         setProducts(productsDummyData)
@@ -92,9 +93,10 @@ export const AppContextProvider = (props) => {
         getCartCount, getCartAmount
     }
 
-     return (
-        <AppContext.Provider value={value}>
-            {props.children}
-        </AppContext.Provider>
-    )
-}
+ 
+   return (
+    <AppContext.Provider value={value}>
+      {props.children}
+    </AppContext.Provider>
+  );
+};
