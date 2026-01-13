@@ -1,24 +1,19 @@
-import {Inngest} from "inngest";
+import { Inngest } from "inngest";
 
-export const inngest = new Innges({id: "app/config/inngest" });
+export const inngest = new Innges({ id: "quickcart-next" });
 
 export const syncUserEvent = inngest.createFunction(
-   { 
-    id: "clerk/sync-created" 
+  {
+    id: "clerk/sync-created",
   },
-  { 
-    event: "clerk/user.created" 
-  },
+  { event: "clerk/user.created" },
   async ({ event }) => {
-    const {
-      id,
-      first_name,
-      last_name,
-      email_addresses,
-      profile_image_url,
-    } = event.data;
+    const { id, first_name, last_name, email_addresses, profile_image_url } =
+      event.data;
     const userData = {
-  email: email_addresses?.[0]?.email_address,
-  name: `${first_name} ${last_name}`,
-  imageUrl: profile_image_url,
-}});
+      email: email_addresses?.[0]?.email_address,
+      name: `${first_name} ${last_name}`,
+      imageUrl: profile_image_url,
+    };
+  },
+);
