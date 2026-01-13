@@ -80,3 +80,13 @@ export const AppContextProvider = (props) => {
     useEffect(() => {
         fetchUserData()
     }, [])
+
+     const value = {
+        currency, router,
+        isSeller, setIsSeller,
+        userData, fetchUserData,
+        products, fetchProductData,
+        cartItems, setCartItems,
+        addToCart, updateCartQuantity,
+        getCartCount, getCartAmount
+    }
