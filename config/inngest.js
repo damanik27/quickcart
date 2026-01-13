@@ -1,4 +1,5 @@
 import { Inngest } from "inngest";
+import connectDB from "./db";
 
 export const inngest = new Innges({ id: "quickcart-next" });
 
@@ -16,5 +17,6 @@ export const syncUserEvent = inngest.createFunction(
       name: first_name + " " + last_name,
       imageUrl: image_url,
     };
+    await connectDB;
   },
 );
