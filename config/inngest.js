@@ -12,7 +12,7 @@ export const syncUserEvent = inngest.createFunction(
       event.data;
     const userData = {
       _id: id,
-      email: email_addresses?.[0]?.email_address,
+      email: email_addresses[0].email_address,
       name: `${first_name} ${last_name}`,
       imageUrl: profile_image_url,
     };
