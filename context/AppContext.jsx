@@ -90,3 +90,10 @@ export const AppContextProvider = (props) => {
         addToCart, updateCartQuantity,
         getCartCount, getCartAmount
     }
+
+     return (
+        <AppContext.Provider value={value}>
+            {props.children}
+        </AppContext.Provider>
+    )
+}
