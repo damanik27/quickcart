@@ -4,7 +4,7 @@ export const inngest = new Innges({ id: "quickcart-next" });
 
 export const syncUserEvent = inngest.createFunction(
   {
-    id: "clerk/sync-created",
+    id: "sync-user-from-clerk",
   },
   { event: "clerk/user.created" },
   async ({ event }) => {
