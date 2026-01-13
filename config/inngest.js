@@ -22,3 +22,5 @@ export const syncUserEvent = inngest.createFunction(
     await User.create(userData);
   },
 );
+
+// Inngest Function to update user data in database
