@@ -10,3 +10,19 @@ export const useAppContext = () => {
 }
 
 export const AppContextProvider = (props) => {
+
+    const currency = process.env.NEXT_PUBLIC_CURRENCY
+    const router = useRouter()
+
+    const [products, setProducts] = useState([])
+    const [userData, setUserData] = useState(false)
+    const [isSeller, setIsSeller] = useState(true)
+    const [cartItems, setCartItems] = useState({})
+
+    const fetchProductData = async () => {
+        setProducts(productsDummyData)
+    }
+
+    const fetchUserData = async () => {
+        setUserData(userDummyData)
+    }
