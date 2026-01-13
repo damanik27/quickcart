@@ -41,4 +41,14 @@ export const AppContextProvider = (props) => {
         }
         setCartItems(cartData);
 
+ const updateCartQuantity = async (itemId, quantity) => {
+
+        let cartData = structuredClone(cartItems);
+        if (quantity === 0) {
+            delete cartData[itemId];
+        } else {
+            cartData[itemId] = quantity;
+        }
+        setCartItems(cartData)
+
     }
