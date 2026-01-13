@@ -36,3 +36,9 @@ export const AppContextProvider = (props) => {
         if (cartData[itemId]) {
             cartData[itemId] += 1;
         }
+         else {
+            cartData[itemId] = 1;
+        }
+        setCartItems(cartData);
+
+    }
