@@ -27,6 +27,12 @@ const AddAddress = () => {
                   Add Shipping <span className="font-semibold text-orange-600">Address</span>
               </p>
               <div className="space-y-3 max-w-sm mt-10">
+                <input
+                    className="px-2 py-2.5 border border-gray-500/30 rounded outline-none w-full text-gray-500"
+                    type="text"
+                    placeholder="Full name"
+                />
+
               </div>
 
             </form>
