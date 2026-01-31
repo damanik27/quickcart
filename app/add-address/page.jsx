@@ -9,6 +9,7 @@ const AddAddress = () => {
     fullName: "",
     phoneNumber: "",
     pincode: "",
+    area: "",
   });
 };
 
