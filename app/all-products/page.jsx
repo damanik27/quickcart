@@ -11,7 +11,9 @@ const AllProducts = () => {
     <>
       <Navbar />
       <div className="flex flex-col items-start px-6 md:px-16 lg:px-32">
-        <div className="flex flex-col items-end pt-12"></div>
+        <div className="flex flex-col items-end pt-12">
+          <p className="text-2xl font-medium">All products</p>
+        </div>
       </div>
 
       <Footer />
