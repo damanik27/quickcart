@@ -61,6 +61,8 @@ const AddAddress = () => {
                       className="px-2 py-2.5 border border-gray-500/30 rounded outline-none w-full text-gray-500"
                       type="text"
                       placeholder="City/District/Town"
+                      onChange={(e) => setAddress({ ...address, city: e.target.value })}
+                      value={address.city}
                   />
                   <input
                       className="px-2 py-2.5 border border-gray-500/30 rounded outline-none w-full text-gray-500"
