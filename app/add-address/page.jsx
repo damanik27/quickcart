@@ -13,6 +13,9 @@ const AddAddress = () => {
     city: "",
     state: "",
   });
+
+  const onSubmitHandler = async (e) => {
+          e.preventDefault();
 };
 
 export default AddAddress;
