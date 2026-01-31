@@ -43,6 +43,40 @@ const Cart = () => {
               {Object.keys(cartItems).map((itemId) => {
                 const product = products.find(p => p._id === itemId);
                 if (!product || cartItems[itemId] <= 0) return null;
+
+                return (
+                                    <tr key={itemId}>
+                                      <td className="flex items-center gap-4 py-4 md:px-4 px-1">
+                                        <div>
+                                          <div className="rounded-lg overflow-hidden bg-gray-500/10 p-2">
+                                            <Image
+                                              src={product.image[0]}
+                                              alt={product.name}
+                                              className="w-16 h-auto object-cover mix-blend-multiply"
+                                              width={1280}
+                                              height={720}
+                                            />
+                                          </div>
+                                          <button
+                                            className="md:hidden text-xs text-orange-600 mt-1"
+                                            onClick={() => updateCartQuantity(product._id, 0)}
+                                          >
+                                            Remove
+                                          </button>
+                                        </div>
+                                        <div className="text-sm hidden md:block">
+                                          <p className="text-gray-800">{product.name}</p>
+                                          <button
+                                            className="text-xs text-orange-600 mt-1"
+                                            onClick={() => updateCartQuantity(product._id, 0)}
+                                          >
+                                            Remove
+                                          </button>
+                                        </div>
+                                      </td>
+                                      <td className="py-4 md:px-4 px-1 text-gray-600">${product.offerPrice}</td>
+                                      <td className="py-4 md:px-4 px-1">
+
               })}
             </tbody>
 
