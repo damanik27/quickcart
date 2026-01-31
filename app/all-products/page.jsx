@@ -21,7 +21,6 @@ const AllProducts = () => {
           ))}
         </div>
       </div>
-
       <Footer />
     </>
   );
