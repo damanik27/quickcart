@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const AddAddress = () => {
-  return <div>Add Address Page</div>;
+  const [address, setAddress] = useState({});
 };
 
 export default AddAddress;
