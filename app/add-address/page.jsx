@@ -23,6 +23,9 @@ const AddAddress = () => {
           <Navbar />
           <div className="px-6 md:px-16 lg:px-32 py-16 flex flex-col md:flex-row justify-between">
             <form className="w-full">
+              <p className="text-2xl md:text-3xl text-gray-500">
+                  Add Shipping <span className="font-semibold text-orange-600">Address</span>
+              </p>
             </form>
           </div>
           <Footer />
