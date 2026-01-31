@@ -29,6 +29,19 @@ const Cart = () => {
             {getCartCount()} Items
           </p>
         </div>
+        <div className="overflow-x-auto">
+          <table className="min-w-full table-auto">
+            <thead className="text-left">
+              <tr>
+                <th>Product Details</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
 
       </div>
     </>
