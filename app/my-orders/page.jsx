@@ -37,6 +37,23 @@ const MyOrders = () => {
                               src={assets.box_icon}
                               alt="box_icon"
                           />
+                          <p className="flex flex-col gap-3">
+                              <span className="font-medium text-base">
+                                  {order.items.map((item) => item.product.name + ` x ${item.quantity}`).join(", ")}
+                              </span>
+                              <span>Items : {order.items.length}</span>
+                          </p>
+                      </div>
+                      <div>
+                          <p>
+                              <span className="font-medium">{order.address.fullName}</span>
+                              <br />
+                              <span >{order.address.area}</span>
+                              <br />
+                              <span>{`${order.address.city}, ${order.address.state}`}</span>
+                              <br />
+                              <span>{order.address.phoneNumber}</span>
+                          </p>
       </div>
       <Footer />
     </>
