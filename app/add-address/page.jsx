@@ -45,6 +45,8 @@ const AddAddress = () => {
                     className="px-2 py-2.5 border border-gray-500/30 rounded outline-none w-full text-gray-500"
                     type="text"
                     placeholder="Pin code"
+                    onChange={(e) => setAddress({ ...address, pincode: e.target.value })}
+                     value={address.pincode}
                 />
                 <textarea
                     className="px-2 py-2.5 border border-gray-500/30 rounded outline-none w-full text-gray-500 resize-none"
