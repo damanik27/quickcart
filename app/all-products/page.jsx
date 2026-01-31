@@ -6,4 +6,11 @@ import { useAppContext } from "@/context/AppContext";
 
 const AllProducts = () => {
   const { products } = useAppContext();
+
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
 };
