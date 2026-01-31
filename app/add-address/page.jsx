@@ -47,6 +47,9 @@ const AddAddress = () => {
                     rows={4}
                     placeholder="Address (Area and Street)"
                 ></textarea>
+                <div className="flex space-x-3">
+                </div>
+
 
 
 
