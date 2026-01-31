@@ -10,6 +10,8 @@ const AllProducts = () => {
   return (
     <>
       <Navbar />
+      <div className="flex flex-col items-start px-6 md:px-16 lg:px-32"></div>
+
       <Footer />
     </>
   );
