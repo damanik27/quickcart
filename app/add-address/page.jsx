@@ -11,6 +11,7 @@ const AddAddress = () => {
     pincode: "",
     area: "",
     city: "",
+    state: "",
   });
 };
 
