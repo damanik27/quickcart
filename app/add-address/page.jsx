@@ -37,6 +37,12 @@ const AddAddress = () => {
                     type="text"
                     placeholder="Phone number"
                 />
+                <input
+                    className="px-2 py-2.5 border border-gray-500/30 rounded outline-none w-full text-gray-500"
+                    type="text"
+                    placeholder="Pin code"
+                />
+
 
 
               </div>
