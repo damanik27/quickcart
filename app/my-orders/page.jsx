@@ -12,4 +12,8 @@ const MyOrders = () => {
 
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const fetchOrders = async () => {
+      setOrders(orderDummyData)
+      setLoading(false);
 };
