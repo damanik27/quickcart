@@ -53,6 +53,7 @@ const AddAddress = () => {
                     type="text"
                     rows={4}
                     placeholder="Address (Area and Street)"
+                    onChange={(e) => setAddress({ ...address, area: e.target.value })}
                 ></textarea>
                 <div className="flex space-x-3">
                   <input
