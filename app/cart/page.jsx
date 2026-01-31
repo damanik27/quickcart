@@ -39,7 +39,13 @@ const Cart = () => {
                 <th className="pb-6 md:px-4 px-1 text-gray-600 font-medium">Subtotal</th>
               </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+              {Object.keys(cartItems).map((itemId) => {
+                const product = products.find(p => p._id === itemId);
+                if (!product || cartItems[itemId] <= 0) return null;
+              })}
+            </tbody>
+
           </table>
         </div>
 
