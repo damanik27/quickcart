@@ -33,10 +33,10 @@ const Cart = () => {
           <table className="min-w-full table-auto">
             <thead className="text-left">
               <tr>
-                <th>Product Details</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
+                <th className="text-nowrap pb-6 md:px-4 px-1 text-gray-600 font-medium">Product Details</th>
+                <th className="pb-6 md:px-4 px-1 text-gray-600 font-medium">Price</th>
+                <th className="pb-6 md:px-4 px-1 text-gray-600 font-medium">Quantity</th>
+                <th className="pb-6 md:px-4 px-1 text-gray-600 font-medium">Subtotal</th>
               </tr>
             </thead>
             <tbody></tbody>
