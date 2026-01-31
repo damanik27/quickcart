@@ -8,6 +8,7 @@ const AddAddress = () => {
   const [address, setAddress] = useState({
     fullName: "",
     phoneNumber: "",
+    pincode: "",
   });
 };
 
