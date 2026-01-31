@@ -26,6 +26,9 @@ const AddAddress = () => {
               <p className="text-2xl md:text-3xl text-gray-500">
                   Add Shipping <span className="font-semibold text-orange-600">Address</span>
               </p>
+              <div className="space-y-3 max-w-sm mt-10">
+              </div>
+
             </form>
           </div>
           <Footer />
