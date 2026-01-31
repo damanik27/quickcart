@@ -58,15 +58,14 @@ const AddAddress = () => {
                       type="text"
                       placeholder="State"
                   />
-
-
                 </div>
-
-
-
-
-
               </div>
+              <button
+                  type="submit"
+                  className="max-w-sm w-full mt-6 bg-orange-600 text-white py-3 hover:bg-orange-700 uppercase"
+              >
+                  Save address
+              </button>
 
             </form>
           </div>
