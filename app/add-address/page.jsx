@@ -7,6 +7,7 @@ import { useState } from "react";
 const AddAddress = () => {
   const [address, setAddress] = useState({
     fullName: "",
+    phoneNumber: "",
   });
 };
 
