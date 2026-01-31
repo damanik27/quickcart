@@ -5,7 +5,9 @@ import Image from "next/image";
 import { useState } from "react";
 
 const AddAddress = () => {
-  const [address, setAddress] = useState({});
+  const [address, setAddress] = useState({
+    fullName: "",
+  });
 };
 
 export default AddAddress;
