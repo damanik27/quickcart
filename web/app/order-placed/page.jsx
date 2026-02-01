@@ -9,3 +9,5 @@ const OrderPlaced = () => {
     const { router } = useAppContext()
 
     useEffect(() => {
+        setTimeout(() => {
+
