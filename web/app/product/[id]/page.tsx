@@ -60,6 +60,12 @@ const Product = () => {
                     </div>
                 </div>
 
+                
+                <div className="flex flex-col">
+                    <h1 className="text-3xl font-medium text-gray-800/90 mb-4">
+                        {productData.name}
+                    </h1>
+
                     
 
 
