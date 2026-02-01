@@ -5,5 +5,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 const OrderPlaced = () => {
-    
+
     const { router } = useAppContext()
+
+    useEffect(() => {
