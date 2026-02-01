@@ -17,3 +17,7 @@ const Orders = () => {
         setOrders(orderDummyData);
         setLoading(false);
     }
+    
+    useEffect(() => {
+        fetchSellerOrders();
+    }, []);
