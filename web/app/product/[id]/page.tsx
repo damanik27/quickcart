@@ -11,3 +11,5 @@ import { useAppContext } from "@/context/AppContext";
 import React from "react";
 
 const Product = () => {
+    
+    const { id } = useParams();
