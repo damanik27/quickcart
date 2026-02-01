@@ -16,7 +16,7 @@ const AddProduct = () => {
     e.preventDefault();
 
   };
-  
+
   return (
     <div className="flex-1 min-h-screen flex flex-col justify-between">
       <form onSubmit={handleSubmit} className="md:p-10 p-4 space-y-5 max-w-lg">
@@ -43,4 +43,18 @@ const AddProduct = () => {
             ))}
 
           </div>
+        </div>
+         <div className="flex flex-col gap-1 max-w-md">
+          <label className="text-base font-medium" htmlFor="product-name">
+            Product Name
+          </label>
+          <input
+            id="product-name"
+            type="text"
+            placeholder="Type here"
+            className="outline-none md:py-2.5 py-2 px-3 rounded border border-gray-500/40"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+            required
+          />
         </div>
