@@ -14,3 +14,8 @@ const OrderPlaced = () => {
     }, 5000)
   }, [])
 
+
+return (
+  <div className='h-screen flex flex-col justify-center items-center gap-5'>
+
+
