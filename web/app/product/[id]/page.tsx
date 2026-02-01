@@ -20,6 +20,14 @@ const Product = () => {
         const product = products.find((product: { _id: any; }) => product._id === id);
         setProductData(product);
     }
+
+     useEffect(() => {
+        fetchProductData();
+    }, [id, products.length])
+
+
+
+
     };
 
 export default Product;
