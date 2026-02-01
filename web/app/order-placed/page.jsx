@@ -17,5 +17,6 @@ const OrderPlaced = () => {
 
 return (
   <div className='h-screen flex flex-col justify-center items-center gap-5'>
+    <div className="flex justify-center items-center relative"></div>
 
 
