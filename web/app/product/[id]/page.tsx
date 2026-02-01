@@ -11,22 +11,25 @@ import { useAppContext } from "@/context/AppContext";
 import React from "react";
 
 const Product = () => {
-    
+
     const { id } = useParams();
+
     const { products, router, addToCart } = useAppContext()
+
     const [mainImage, setMainImage] = useState(null);
-     const [productData, setProductData] = useState(null);
-     const fetchProductData = async () => {
-        const product = products.find((product: { _id: any; }) => product._id === id);
+    const [productData, setProductData] = useState(null);
+
+    const fetchProductData = async () => {
+        const product = products.find(product => product._id === id);
         setProductData(product);
     }
 
-     useEffect(() => {
+    useEffect(() => {
         fetchProductData();
     }, [id, products.length])
 
     return productData ? (<>
-         <Navbar />
+        <Navbar />
         <div className="px-6 md:px-16 lg:px-32 pt-14 space-y-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div className="px-5 lg:px-16 xl:px-20">
@@ -60,12 +63,11 @@ const Product = () => {
                     </div>
                 </div>
 
-                
                 <div className="flex flex-col">
                     <h1 className="text-3xl font-medium text-gray-800/90 mb-4">
                         {productData.name}
                     </h1>
-                     <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2">
                         <div className="flex items-center gap-0.5">
                             <Image className="h-4 w-4" src={assets.star_icon} alt="star_icon" />
                             <Image className="h-4 w-4" src={assets.star_icon} alt="star_icon" />
@@ -79,10 +81,9 @@ const Product = () => {
                         </div>
                         <p>(4.5)</p>
                     </div>
-                     <p className="text-gray-600 mt-3">
+                    <p className="text-gray-600 mt-3">
                         {productData.description}
                     </p>
-                       </p>
                     <p className="text-3xl font-medium mt-6">
                         ${productData.offerPrice}
                         <span className="text-base font-normal text-gray-800/60 line-through ml-2">
@@ -137,12 +138,6 @@ const Product = () => {
         <Footer />
     </>
     ) : <Loading />
-
-                    
-
-
-
-
-    };
+};
 
 export default Product;
