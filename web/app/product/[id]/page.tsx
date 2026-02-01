@@ -31,6 +31,14 @@ const Product = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div className="px-5 lg:px-16 xl:px-20">
                     <div className="rounded-lg overflow-hidden bg-gray-500/10 mb-4">
+                      <Image
+                            src={mainImage || productData.image[0]}
+                            alt="alt"
+                            className="w-full h-auto object-cover mix-blend-multiply"
+                            width={1280}
+                            height={720}
+                        />
+                    </div>
 
 
 
