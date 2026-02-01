@@ -44,6 +44,17 @@ const Orders = () => {
                                     <span>Items : {order.items.length}</span>
                                 </p>
                             </div>
+                             <div>
+                                <p>
+                                    <span className="font-medium">{order.address.fullName}</span>
+                                    <br />
+                                    <span >{order.address.area}</span>
+                                    <br />
+                                    <span>{`${order.address.city}, ${order.address.state}`}</span>
+                                    <br />
+                                    <span>{order.address.phoneNumber}</span>
+                                </p>
+                            </div>
 
                                 
 
