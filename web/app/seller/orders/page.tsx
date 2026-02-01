@@ -17,13 +17,12 @@ const Orders = () => {
         setOrders(orderDummyData);
         setLoading(false);
     }
-    
+
     useEffect(() => {
         fetchSellerOrders();
     }, []);
 
-    
-   return (
+    return (
         <div className="flex-1 h-screen overflow-scroll flex flex-col justify-between text-sm">
             {loading ? <Loading /> : <div className="md:p-10 p-4 space-y-5">
                 <h2 className="text-lg font-medium">Orders</h2>
@@ -31,20 +30,19 @@ const Orders = () => {
                     {orders.map((order, index) => (
                         <div key={index} className="flex flex-col md:flex-row gap-5 justify-between p-5 border-t border-gray-300">
                             <div className="flex-1 flex gap-5 max-w-80">
-
-                                 <Image
+                                <Image
                                     className="max-w-16 max-h-16 object-cover"
                                     src={assets.box_icon}
                                     alt="box_icon"
                                 />
-                                 <p className="flex flex-col gap-3">
+                                <p className="flex flex-col gap-3">
                                     <span className="font-medium">
                                         {order.items.map((item) => item.product.name + ` x ${item.quantity}`).join(", ")}
                                     </span>
                                     <span>Items : {order.items.length}</span>
                                 </p>
                             </div>
-                             <div>
+                            <div>
                                 <p>
                                     <span className="font-medium">{order.address.fullName}</span>
                                     <br />
@@ -55,7 +53,7 @@ const Orders = () => {
                                     <span>{order.address.phoneNumber}</span>
                                 </p>
                             </div>
-                             <p className="font-medium my-auto">{currency}{order.amount}</p>
+                            <p className="font-medium my-auto">{currency}{order.amount}</p>
                             <div>
                                 <p className="flex flex-col">
                                     <span>Method : COD</span>
@@ -73,9 +71,3 @@ const Orders = () => {
 };
 
 export default Orders;
-
-                                
-
-
-   
-
