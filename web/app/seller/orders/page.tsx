@@ -21,3 +21,13 @@ const Orders = () => {
     useEffect(() => {
         fetchSellerOrders();
     }, []);
+
+    
+    return (
+    <div className="flex-1 h-screen overflow-scroll flex flex-col justify-between text-sm">
+        <Footer />
+    </div>
+);
+
+   
+
