@@ -17,3 +17,6 @@ const Product = () => {
     const [mainImage, setMainImage] = useState(null);
      const [productData, setProductData] = useState(null);
      const fetchProductData = async () => {
+        const product = products.find((product: { _id: any; }) => product._id === id);
+        setProductData(product);
+    }
