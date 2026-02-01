@@ -13,3 +13,4 @@ import React from "react";
 const Product = () => {
     
     const { id } = useParams();
+    const { products, router, addToCart } = useAppContext()
