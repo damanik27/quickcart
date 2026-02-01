@@ -25,6 +25,7 @@ const Orders = () => {
     
     return (
     <div className="flex-1 h-screen overflow-scroll flex flex-col justify-between text-sm">
+         {loading ? <Loading /> : <div>Pesanan akan muncul di sini</div>}
         <Footer />
     </div>
 );
